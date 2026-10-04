@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Java Lab Academic Portfolio | P. Kristi Marlin | 25EU02109</title>
+<meta name="description" content="Java Lab Academic Portfolio of P. Kristi Marlin (25EU02109), AI &amp; ML, Academic Year 2025–29.">
+<meta name="theme-color" content="#1f4e5f">
+<script>
+(function(){var d=document.documentElement;d.classList.add('js');var t=null;
+try{t=localStorage.getItem('theme');}catch(e){}
+if(t!=='dark'&&t!=='light'){t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}
+d.setAttribute('data-theme',t);})();
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+  <div class="bar">
+    <a class="brand" href="#home" aria-label="Java Lab Academic Portfolio, home"><span class="brand-mark" aria-hidden="true">J</span><span>Java Lab Portfolio</span></a>
+    <nav id="nav" class="nav" aria-label="Main navigation">
+      <a href="#home" data-link="home">Home</a>
+      <a href="#profile" data-link="profile">Profile</a>
+      <a href="#weeks" data-link="weeks">Lab Weeks</a>
+      <a href="#programs" data-link="programs">Programs</a>
+      <a href="#progress" data-link="progress">Progress</a>
+      <a href="#about" data-link="about">About</a>
+    </nav>
+    <button id="themeToggle" class="icon-btn" type="button" aria-label="Switch to dark mode"><span aria-hidden="true" id="themeIcon">☾</span></button>
+    <button id="menuToggle" class="icon-btn menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span aria-hidden="true">☰</span></button>
+  </div>
+</header>
+
+<main id="main">
+<section id="home" class="hero" aria-labelledby="homeTitle">
+  <div class="wrap">
+    <p class="eyebrow">Java Lab · Academic Year 2025–29</p>
+    <h1 id="homeTitle">Java Lab Academic Portfolio</h1>
+    <p class="lead">A record of Java Lab programs, experiments and outputs, organised week by week.</p>
+    <dl class="meta">
+      <div><dt>Student</dt><dd>P. Kristi Marlin</dd></div>
+      <div><dt>Roll No.</dt><dd>25EU02109</dd></div>
+      <div><dt>Branch</dt><dd>AI &amp; ML</dd></div>
+      <div><dt>Faculty</dt><dd>Ramesh Sir</dd></div>
+      <div><dt>Academic Year</dt><dd>2025–29</dd></div>
+    </dl>
+    <div class="stats" id="stats" aria-label="Portfolio statistics"></div>
+    <div class="cta"><a class="btn primary" href="#weeks">Browse lab weeks</a><a class="btn" href="#programs">View programs</a></div>
+  </div>
+</section>
+
+<section id="profile" class="section reveal" aria-labelledby="profileTitle">
+  <div class="wrap">
+    <h2 id="profileTitle">Student Profile</h2>
+    <article class="card profile">
+      <div class="avatar" aria-hidden="true">PK</div>
+      <dl class="profile-list">
+        <div><dt>Name</dt><dd>P. Kristi Marlin</dd></div>
+        <div><dt>Roll Number</dt><dd>25EU02109</dd></div>
+        <div><dt>Branch</dt><dd>AI &amp; ML</dd></div>
+        <div><dt>Faculty</dt><dd>Ramesh Sir</dd></div>
+        <div><dt>Academic Year</dt><dd>2025–29</dd></div>
+        <div><dt>Subject</dt><dd>Java Lab</dd></div>
+      </dl>
+    </article>
+  </div>
+</section>
+
+<section id="weeks" class="section reveal" aria-labelledby="weeksTitle">
+  <div class="wrap">
+    <h2 id="weeksTitle">Java Lab Weeks</h2>
+    <p class="sub">Only weeks present in the uploaded lab documents are listed. Select a week to open its programs.</p>
+    <div id="weekGrid" class="grid"></div>
+    <p id="missingWeeks" class="note"></p>
+  </div>
+</section>
+
+<section id="programs" class="section reveal" aria-labelledby="programsTitle">
+  <div class="wrap">
+    <h2 id="programsTitle">Programs &amp; Experiments</h2>
+    <div class="toolbar">
+      <div class="field grow"><label for="search">Search</label>
+        <input id="search" type="search" placeholder="e.g. week 8, StringBuffer, throws, Runnable" autocomplete="off"></div>
+      <div class="field"><label for="weekFilter">Week</label><select id="weekFilter"></select></div>
+      <div class="field"><label for="typeFilter">Content</label>
+        <select id="typeFilter">
+          <option value="all">All content</option>
+          <option value="code">Has source code</option>
+          <option value="shot">Has screenshots</option>
+          <option value="aim">Has aim &amp; result</option>
+        </select></div>
+      <button id="resetFilters" class="btn small" type="button">Reset</button>
+    </div>
+    <p id="resultCount" class="note" role="status" aria-live="polite"></p>
+    <div id="programList"></div>
+  </div>
+</section>
+
+<section id="progress" class="section reveal" aria-labelledby="progressTitle">
+  <div class="wrap">
+    <h2 id="progressTitle">Documented Progress</h2>
+    <p class="sub">This view shows how much content is documented per week. It is based only on the uploaded documents and is not a completion or grade percentage.</p>
+    <div id="progressList" class="progress-list"></div>
+  </div>
+</section>
+
+<section id="about" class="section reveal" aria-labelledby="aboutTitle">
+  <div class="wrap narrow">
+    <h2 id="aboutTitle">Learning Journey</h2>
+    <p>This portfolio documents my Java Lab learning journey: the programs I wrote, the experiments I carried out and the outputs I observed, along with the practical understanding gained while doing them.</p>
+    <p>The content follows my lab record documents, from setting up Java and writing first programs to classes, inheritance, exception handling, file streams and threads. It is meant to be a clear, organised reference for my faculty and for my own revision.</p>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="f-name">P. Kristi Marlin | 25EU02109 | AI &amp; ML</p>
+    <p>Java Lab Academic Portfolio</p>
+    <p>Academic Year: 2025–29</p>
+  </div>
+</footer>
+
+<button id="toTop" class="to-top" type="button" aria-label="Back to top" hidden>↑</button>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
